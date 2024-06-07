@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <style>
+        @media (max-width: 500px) {
+            .range img {
+                height: 100px;
+                width: 100px;
+            }
+            .range {
+                height: 120px;
+                width: 120px;
+            }
+            .container-2 {
+                gap:3px;
+            }
+            #computerCount,#userCount {
+                font-size: 20px;
+            }
+            #you,#comp {
+                font-size: 15px;
+            }
+            .container-3 {
+                padding-left: 15px;
+                
+            }
+        }
+    </style>
+</head>
+<body>
+   
+    <h1 class=" bg-slate-900 w-full text-white text-center h-[60px]  text-[30px] leading-[60px]">Rock Paper Scissor</h1>
+    <div class="container-2 flex justify-center items-center gap-10 pt-[60px]">
+      <button id="stone" class="range h-[220px] w-[220px] flex justify-center items-center rounded-full hover:bg-slate-900 hover:scale-105 hover:shadow-lg transition duration-300 "><img  class=" rounded-full h-[200px] w-[200px] object-cover cursor-pointer" src="./rock.png"></button>
+       <div id="paper" class="range h-[220px] w-[220px] flex justify-center items-center rounded-full hover:bg-slate-900 hover:scale-105 hover:shadow-lg transition duration-300"><img   class=" rounded-full h-[200px] w-[200px] object-cover cursor-pointer" src="./paper.png"></div>
+       <div id="scissor" class="range h-[220px] w-[220px] flex justify-center items-center rounded-full hover:bg-slate-900 hover:scale-105 hover:shadow-lg transition duration-300"><img  class=" rounded-full h-[200px] w-[200px] object-cover cursor-pointer"  src="./scissors.png"> </div>
+    </div>
+    <div class="container-3 flex  justify-center items-center mt-[70px] gap-[90px]">
+        <div class="">
+            <div id="userCount" class=" text-[30px] font-normal">0</div>
+            <div  id="you" class=" text-[20px] font-mono">You</div>
+        </div>
+        <div class="">
+            <div id="computerCount" class=" text-[30px] ">0</div>
+            <div id="comp" class=" text-[20px] font-mono ">Comp</div>
+        </div>
+    </div>
+    <div id="choice" class=" flex justify-center items-center mt-[40px] bg-slate-900 leading-[50px] h-[50px] text-white text-[20px] w-[200px] mx-auto rounded-[10px] cursor-pointer hover:scale-105 hover:shadow-lg transition duration-300">Pick your choice</div>
+    <script src="sps.js"></script>
+</body>
+</html>
